@@ -1,0 +1,303 @@
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+  border: 8px solid #5A7E7F;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.logo-container {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  height: 100px;
+  z-index: 10; 
+}
+
+.logo-left {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 200px;
+  z-index: 10;
+}
+
+.logo-right {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 200px;
+  z-index: 10;
+}
+
+
+.hero {
+  height: 60vh;
+  background-color: #e6f7ff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  z-index: 1;
+}
+.yoga-day-section {
+  background-color: #fff9cc; 
+  padding: 30px;
+  text-align: center;
+}
+
+.yoga-day-section h2 {
+  color: #003366; 
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.yoga-day-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.yoga-day-images img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(144, 238, 144, 0.6);
+}
+
+.yoga-day-text {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  box-shadow: 0 4px 8px rgba(144, 238, 144, 0.6);
+}
+
+
+
+
+.hero::before {
+  display: none;
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 3rem;
+  color: #0d47a1;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent; 
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #0d47a1;
+  background-color: transparent; 
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+}
+
+.what-is-yoga-section {
+  background-color: #fff9c4; 
+  padding: 40px 20px;
+}
+
+
+.what-is-yoga-section h2 {
+  text-align: center;
+  color: #002244; 
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.what-is-yoga-section p {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #333333;
+  max-width: 800px;
+  margin: 0 auto; 
+  line-height: 1.6;
+}
+
+
+
+.definition {
+  max-width:700px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
+.definition h2 { font-size:2rem; color:#5A7E7F; margin-bottom:0.5rem; }
+.definition p { font-size:1.1rem; color:#555; }
+
+/* Types */
+.types {
+  max-width:900px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
+.types h2 { font-size:2rem; color:#5A7E7F; margin-bottom:1rem; }
+
+.type-entry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.type-entry:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.hatha-img {
+  width: 800px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.yoga-type-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.type-entry img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.type-entry img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.type-entry .type-text {
+  flex: 1;
+  text-align: left;
+}
+.type-text h3 { margin-bottom:0.3rem; font-size:1.3rem; }
+.type-text p { color:#444; }
+
+.type-entry:nth-of-type(1) { background:#E5F6FA; }
+.type-entry:nth-of-type(2) { background:#F3EAF8; }
+.type-entry:nth-of-type(3) { background:#FEF7E5; }
+.type-entry:nth-of-type(4) { background:#E8F8F4; }
+.type-entry:nth-of-type(5) { background:#FFECE1; }
+.type-entry:nth-of-type(6) { background:#E9F3FE; }
+.type-entry:nth-of-type(7) { background:#F8EFF8; }
+.type-entry:nth-of-type(8) { background:#F5F1E5; }
+.type-entry:nth-of-type(9) { background:#EBF7E6; }
+.type-entry:nth-of-type(10){ background:#F9ECE8;}
+
+.benefits-box {
+  background: #ffe6f0; 
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5); 
+}
+
+.benefits-box h2 {
+  color: #5A7E7F;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.benefits-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.benefits-box ul {
+  list-style: disc inside;
+  color: #ad1457; 
+  padding-left: 1rem;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+.yoga-day-section {
+  background-color: #fffacd; 
+  padding: 30px;
+  text-align: center;
+}
+
+.yoga-day-section h2 {
+  color: #004aad; 
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.yoga-day-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.yoga-day-images img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(144, 238, 144, 0.6); 
+}
+
+.yoga-day-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  text-align: left;
+}
+
+
+
+.organizations {
+  padding:2rem 1rem;
+  background:#f3f3f3;
+}
+.organizations h2 { color:#5A7E7F; margin-bottom:1rem; }
+.logos img {
+  width:120px;
+  margin:0 1rem;
+  vertical-align:middle;
+}
+
+
+@media(max-width:768px) {
+  .hero h1 { font-size:2.4rem; }
+  .hero .quote { font-size:1rem; }
+  .yoga-day-images { flex-direction:column; }
+}
